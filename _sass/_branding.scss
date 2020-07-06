@@ -1,0 +1,58 @@
+//
+// Add your Branding & Corporate Identity Design here
+//
+
+
+
+$SV-green: #94D510;//#bceb00;
+$SV-complement: complement($SV-green);
+$SV-complement-dark: desaturate(darken($SV-complement, 35%),60%);
+
+$body-bg: #4d4d57;// #ffffff;
+$body-color: white;//#5a5a5a;
+
+$theme-colors: (
+        "primary": $SV-green,
+        "success": $SV-green
+);
+
+
+$link-color:                              $SV-green;
+$link-decoration:                         none;
+$link-hover-color:                        lighten($link-color, 30%);
+$link-hover-decoration:                   underline ;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15% ;
+
+$hr-border-color: $SV-green;
+$danger: #ff5100;
+
+// style the nav-tabs (used in "about" page)
+$nav-tabs-link-active-bg: $body-bg;
+$nav-tabs-link-active-color: $body-color;
+$nav-tabs-link-active-border-color: $SV-green $SV-green $nav-tabs-link-active-bg;
+
+// restyle the "navbar-dark" style in order to increase legibility
+
+$navbar-dark-color: white;
+$navbar-dark-active-color: white;
+
+$nav-tabs-border-color:       $SV-green;
+
+$navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$SV-green}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23") ;
+$navbar-dark-toggler-border-color: $SV-green;
+
+$nav-tabs-link-hover-border-color:  $gray-500 $gray-500 $nav-tabs-border-color ;
+
+.nav-link {
+  color: $gray-500;
+  @include hover {
+    color: $gray-200;
+
+  }
+}
+
+// Thin out the  headings (may be also "letter-spacing: -.05rem;")
+$headings-font-weight: 300;
+
+

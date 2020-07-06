@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% comment %} <!-- template for a normal article -->{% endcomment %}
+
+<!-- layout article -->
+<main role="main">
+  <div class="container" style="margin-top: 0rem">
+
+      <figure class="hero">
+        <img src="assets/img/posts/piano-2656397_1280_2.jpg" class="" alt="Klavier und Flöte">
+        <div class="copyright">
+          Bild von
+          <a href="https://pixabay.com/de/users/danceyokoo-3154690/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2656397">Dance
+            Yokoo</a> auf
+          <a href="https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2656397">Pixabay</a>
+        </div>
+      </figure>
+
+    <h2 class="featurette-heading my-md-3">{{ page.title | escape }}
+      <small class="text-muted">{{ page.subtitle | escape }}</small></h2>
+    <div class="lead">
+      {{ content }}
+    </div>
+  </div>
+</main>
+<!-- end layout article -->
