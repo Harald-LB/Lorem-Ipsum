@@ -50,7 +50,7 @@ body {
 
 .navbar {
   border-top: 8px solid $SV-green;
-  background-color: rgba($SV-complement-dark, 0.75);
+  background-image: linear-gradient(rgba($SV-complement-dark,0.5), rgba($SV-complement-dark,0.1));
 }
 
 //
