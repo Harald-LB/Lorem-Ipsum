@@ -2,11 +2,11 @@
 ---
 /*!
  * Main SCSS for the LandingPage Template.
- * Copyright 2019 Harald-LB
+ * Copyright 2020 Harald-LB
  */
 
 //in order to have `baseurl` variable expanded, the we need to define the  path to the carousel images here.
-
+/*
 $carousel-image-1-sm: '{{ site.baseurl }}/assets/img/carousel/MV-P-01-sm.jpg';
 $carousel-image-2-sm: '{{ site.baseurl }}/assets/img/carousel/MVO-01-sm.jpg';
 $carousel-image-3-sm: '{{ site.baseurl }}/assets/img/carousel/SVM-01-sm.jpg';
@@ -16,14 +16,21 @@ $carousel-image-1: '{{ site.baseurl }}/assets/img/carousel/MV-P-01.jpg';
 $carousel-image-2: '{{ site.baseurl }}/assets/img/carousel/MVO-01.jpg';
 $carousel-image-3: '{{ site.baseurl }}/assets/img/carousel/SVM-01.jpg';
 $carousel-image-4: '{{ site.baseurl }}/assets/img/carousel/MV-P-02.jpg';
+*/
+
+
+// For Branding & Corporate Identity Design we overwrite some defaults.
+@import "bootstrap/mixins";
+@import "branding";
 
 // Required
+// default settings as defined by Twitter
 @import "bootstrap/functions";
 @import "bootstrap/variables";
-@import "bootstrap/mixins";
 
-// Branding & Corporate Identity Design here
-@import "branding";
+
+
+// @import "branding";
 
 // Optional
 @import "bootstrap/root";
